@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Frases Motivacionais - Pokémon"
-        android:textColor="#9C27B0"
+        android:textColor="#673AB7"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
         android:onClick="mudarFrase"
         android:text="Nova Frase"
         android:textSize="20sp"
-        app:backgroundTint="#9C27B0"
+        app:backgroundTint="#3A2B55"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
