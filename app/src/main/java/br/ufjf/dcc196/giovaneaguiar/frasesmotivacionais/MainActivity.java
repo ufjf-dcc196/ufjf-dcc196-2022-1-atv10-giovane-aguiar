@@ -1,11 +1,13 @@
 package br.ufjf.dcc196.giovaneaguiar.frasesmotivacionais;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Query;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
@@ -47,10 +49,23 @@ public class MainActivity extends AppCompatActivity {
         //frases = repo.getFrases();
         //textViewFrases.setText(repo.getFrases());
 
+        FrasesMotivacionaisDAO frasesMotivacionaisDAO = new FrasesMotivacionaisDAO() {
+            @Override
+            public void insertFrasesMotivacionais(FrasesMotivacionais novaFrase) {
+
+            }
+
+            @Override
+            public List<FrasesMotivacionais> findAll() {
+                return null;
+            }
+        };
     }
 
 
     public void mudarFrase(View view) {
+
+
 
         textViewFrases = findViewById(R.id.textViewFrases);
 
